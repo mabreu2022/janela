@@ -20,7 +20,8 @@ class TelaPython:
             [sg.Radio('Sim', 'cartoes', key='aceitaCartao'), sg.Radio('Não', 'cartoes', key='naoAceitaCartao')],
             [sg.Slider(range(0,255), default_value=0, orientation='h', size=(15, 20), key='sliderVelocidade')],
             [sg.Button('Enviar Dados')],
-            [sg.Output(size=(30, 20))]            
+            [sg.Output(size=(30, 20))]   
+                     
         ]
         # Janela
         self.janela = sg.Window("Dados do Usuário").layout(layout)
